@@ -6,6 +6,8 @@
 4. Move all setup files to the top
 5. Move all test files to the bottom
 6. If possible, move all model etc to another file
+
+ 
 `ZOE`
 1. Do same as leres
 
