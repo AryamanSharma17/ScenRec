@@ -4,7 +4,7 @@
 ![Teaser image]()
 
 This repository contains "Les Furnitures", 3D Room Representation using a single image, a master project done in "Complex Computer Rendering Methods in Real Time" class in Jean Monnet University. By using GroundingDINO and SegmentAnything we detect the furnitures and by using ZoeDepth we calculate the relative depth and orientation. 
-Finally, we introduce a visualization in browser or VR using Three.js. .*
+Finally, we introduce a visualization in browser or VR using Three.js.
 
 ## Usage
 Clone the repository by running:
