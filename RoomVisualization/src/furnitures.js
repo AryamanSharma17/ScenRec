@@ -3,11 +3,15 @@ import * as THREE from 'three';
 export function createFurniture(x, y, z, furniture_category, scene){
     var color_table = "blue";
     var color_chair = "red";
+    var color_unknown = "green";
     if (furniture_category == "1"){
         createTable(x, y, z, scene, color_table)
     }
     else if (furniture_category == "0"){
         createChair(x, y, z, scene, color_chair)
+    }
+    else {
+        createUnknown(x, y, z, scene, color_unknown)
     }
 }
 
@@ -26,6 +30,11 @@ function createTable(x, y, z, scene, color_r){
     const leg_l_back_mesh = addSolidGeometry(0.7, -0.28, -0.4, new THREE.BoxGeometry(2, 12, 2), desk_mesh, color_r, texture);
     const leg_r_back_mesh = addSolidGeometry(-0.7, -0.28, -0.4, new THREE.BoxGeometry(2, 12, 2), desk_mesh, color_r, texture);
     return desk_mesh;
+}
+
+function createUnknown(x, y, z, scene, color_r){
+    const cube_mesh = addSolidGeometry(0.55+x, 0.55+y, 0.55+z, new THREE.BoxGeometry(12, 12, 12), scene, color_r, texture);
+    return cube_mesh;
 }
 
 const loader = new THREE.TextureLoader();

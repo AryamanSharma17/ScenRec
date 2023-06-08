@@ -113,7 +113,7 @@ import { createFurniture } from "./src/furnitures.js";
         var depthValues = [];
         var jsonData = [];
 
-        loader1.load('Vr_json.json', function(data) {
+        loader1.load('Vr_Zoe.json', function(data) {
         jsonData = JSON.parse(data);
         // Call a function or perform any operations using the jsonData here
         processJsonData();
@@ -123,14 +123,12 @@ import { createFurniture } from "./src/furnitures.js";
         function processJsonData() {
             // Access the jsonData here and perform desired operations
             // Iterate over each element in the JSON data
-            for (var i = 0; i < jsonData.length; i++) {
-                var element = jsonData[i];
-                
+            for (var key in jsonData) {
+                var element = jsonData[key];
                 // Retrieve the "Depth" attribute of the element
-                var depth = parseFloat(element.Normalized_Depth);
-                var furniture = parseFloat(element.Furniture);
+                var depth = parseFloat(element.Depth);
+                var furniture = parseFloat(element.Furniture_category);
                 var centerX = parseFloat(element.Normalized_Center_X);
-
                 // Add the depth value to the array
                 depthValues.push(depth);
                 furnitureValues.push(furniture);
@@ -142,8 +140,8 @@ import { createFurniture } from "./src/furnitures.js";
             console.log('furniture values:', furnitureValues);
             console.log('center values:', centerXValues);
             var colors = [];
-            for (var i = 0; i < jsonData.length; i++) {
-                createFurniture(centerXValues[i], 0, depthValues[i], furnitureValues[i], scene, colors);
+            for (var key in jsonData) {
+                createFurniture(centerXValues[key], 0, depthValues[key], furnitureValues[key], scene, colors);
             }
         }
 
@@ -203,8 +201,8 @@ import { createFurniture } from "./src/furnitures.js";
         scene.add( group );
         // gui mesh - this is in order to make the gui in VR mode
         const mesh = new HTMLMesh( gui.domElement );
-        mesh.position.x = -15;
-        mesh.position.y = 6;
+        mesh.position.x = -50;
+        mesh.position.y = 50;
         mesh.position.z = 11;
         mesh.rotation.y = Math.PI / 4;
         mesh.scale.setScalar( 60 ); // be careful with the scale!
