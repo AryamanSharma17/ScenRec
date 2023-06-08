@@ -1,9 +1,9 @@
 ## Les Furnitures 
 [Aryaman Sharma](https://github.com/AryamanSharma17) and [Shani Israelov](https://github.com/shani1610)
 
-![Teaser image]()
+![Picture1](https://github.com/AryamanSharma17/ScenRec/assets/56839113/e611fdc5-b539-40f9-b73e-09ab3187a51d)
 
-This repository contains "Les Furnitures", 3D Room Representation using a single image, a master project done in "Complex Computer Rendering Methods in Real Time" class in Jean Monnet University. By using GroundingDINO and SegmentAnything we detect the furnitures and by using ZoeDepth we calculate the relative depth and orientation. 
+This repository contains "Les Furnitures", 3D Room Representation using a single image, a master project done in "Complex Computer Rendering Methods in Real Time" class in Jean Monnet University. By using GroundingDINO and SegmentAnything we detect the furnitures and by using ZoeDepth we calculate the relative depth. 
 Finally, we introduce a visualization in browser or VR using Three.js.
 
 ## Usage
@@ -33,6 +33,13 @@ we provided some examples you can open in browser.
 | &boxvr;&nbsp; [stylegan-video.mp4](https://drive.google.com/open?id=1uzwkZHQX_9pYg1i0d1Nbe3D9xPO8-qBf) | High-quality version of the result video.
 | &boxvr;&nbsp; [images](https://drive.google.com/open?id=1-l46akONUWF6LCpDoeq63H53rD7MeiTd) | Example images produced using our generator.
 | &boxv;&nbsp; &boxvr;&nbsp; [representative-images](https://drive.google.com/open?id=1ToY5P4Vvf5_c3TyUizQ8fckFFoFtBvD8) | High-quality images to be used in articles, blog
+
+## Future work 
+* Orientation Detection from single image 
+* More furniture categories
+* More complex scenarios 
+* Realistic representation 
+* GUI for changes
 
 ## Acknowledgements
 
