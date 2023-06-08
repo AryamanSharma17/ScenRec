@@ -40,6 +40,8 @@ we provided some examples you can open in browser.
 * More complex scenarios 
 * Realistic representation 
 * GUI for changes
+* Change from notebook to prompt 
+* Add warnings for cases nothing has been detected
 
 ## Acknowledgements
 
