@@ -46,7 +46,7 @@ we provided some examples you can open in browser.
 ## Acknowledgements
 
 We thank the authors of GroundingDINO, SAM and ZoeDepth, we used their github and hugging face demos and notebooks. 
-We thank our professor Phillip Colantoni for the advices. 
+We thank our professor Philippe Colantoni for the advices. 
 
 ## Additional Notes about the process
 
@@ -68,3 +68,13 @@ We thank our professor Phillip Colantoni for the advices.
 1. Add Stereo-from-Mono by NianticLabs
 2. Add MiDaS
 3. git= google-research-datasets/Objectron
+
+#### 08.06.2023
+
+Leres model added
+
+Visualization Posisble
+
+Erosion Disregarded
+
+File formatting done
