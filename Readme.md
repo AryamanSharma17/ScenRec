@@ -1,10 +1,11 @@
 ## Les Furnitures 
 [Aryaman Sharma](https://github.com/AryamanSharma17) and [Shani Israelov](https://github.com/shani1610)
 
-![Picture1](https://github.com/AryamanSharma17/ScenRec/assets/56839113/e611fdc5-b539-40f9-b73e-09ab3187a51d)
 
 This repository contains "Les Furnitures", a 3D Room Representation using a single image: A master project done for the "Complex Computer Rendering Methods in Real Time" course at Jean Monnet University. By using GroundingDINO and SegmentAnything we detect the furniture and by using ZoeDepth or LeReS we calculate the relative depth. 
 Finally, we introduce a visualization in a browser or VR using Three.js.
+
+![Results of the different steps of the pipeline](https://github.com/AryamanSharma17/ScenRec/blob/master/Resource/Gitimage_all.jpg)
 
 ## Usage
 1. Clone the repository by running the following in terminal:
@@ -14,11 +15,11 @@ git clone https://github.com/AryamanSharma17/ScenRec.git
 
 2. Create a Virtual environment using: 
 
-conda env create -f env.yml
-
-or
-
-conda create -f packagelist.txt
+    ```conda env create -f env.yml```
+    
+    or
+    
+    `conda create -f packagelist.txt`
 
 3. Run the notebook *Grounded-SAM-Zoe.ipynb*
 
@@ -35,6 +36,7 @@ Material related to our project is available via the following links:
 - GroundingDINO Github repo: https://github.com/IDEA-Research/GroundingDINO
 - SAM Github repo: https://github.com/facebookresearch/segment-anything
 - ZoeDepth Github repo: https://github.com/isl-org/ZoeDepth
+- LeReS Github repo: https://github.com/aim-uofa/AdelaiDepth/tree/main/LeReS
 
 ## Future work 
 * Orientation Detection from a single image 
@@ -50,7 +52,15 @@ Material related to our project is available via the following links:
 We thank the authors of GroundingDINO, SAM, and ZoeDepth, we used their GitHub and hugging face demos and notebooks. 
 We thank our professor Philippe Colantoni for the advice. 
 
-## Additional Notes about the process
+## Updates
+
+#### 19.06.2023
+
+Format the repository
+
+To Do:
+1. Change the ZoeDepth Fork repo 
+2. Shift Python notebook(.ipynb) based implementation to Python file(.py) based implementation
 
 #### 08.06.2023
 
@@ -63,6 +73,7 @@ Erosion Disregarded
 File formatting done
 
 #### 05.06.2023
+To do:
 `Leres`
 1. For each mask, do separate erosion
 2. Erosion can be: 3,3 kernel on small images based on a simple mask
