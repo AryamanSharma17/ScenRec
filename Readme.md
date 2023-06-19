@@ -16,6 +16,9 @@ run the notebook *Grounded-SAM-Zoe.ipynb*
 
 The test images are stored [here](https://github.com/AryamanSharma17/ScenRec/tree/master/Resource/Test_images)
 
+To test your own image, add the path to the [notebook](https://github.com/AryamanSharma17/ScenRec/blob/master/Grounded-SAM-Zoe.ipynb) cell 13
+>test_image = dirmain + ...
+
 ## Resources
 
 Material related to our project is available via the following links:
