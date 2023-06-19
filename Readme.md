@@ -12,6 +12,14 @@ Clone the repository by running the following in terminal:
 git clone https://github.com/AryamanSharma17/ScenRec.git
 ``
 
+Create a Virtual environment using: 
+
+conda env create -f env.yml
+
+or
+
+conda create -f packagelist.txt
+
 run the notebook *Grounded-SAM-Zoe.ipynb*
 
 The test images are stored [here](https://github.com/AryamanSharma17/ScenRec/tree/master/Resource/Test_images)
