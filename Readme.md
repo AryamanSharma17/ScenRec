@@ -3,16 +3,16 @@
 
 ![Picture1](https://github.com/AryamanSharma17/ScenRec/assets/56839113/e611fdc5-b539-40f9-b73e-09ab3187a51d)
 
-This repository contains "Les Furnitures", a 3D Room Representation using a single image: A master project done for the "Complex Computer Rendering Methods in Real Time" course at Jean Monnet University. By using GroundingDINO and SegmentAnything we detect the furniture and by using ZoeDepth we calculate the relative depth. 
+This repository contains "Les Furnitures", a 3D Room Representation using a single image: A master project done for the "Complex Computer Rendering Methods in Real Time" course at Jean Monnet University. By using GroundingDINO and SegmentAnything we detect the furniture and by using ZoeDepth or LeReS we calculate the relative depth. 
 Finally, we introduce a visualization in a browser or VR using Three.js.
 
 ## Usage
-Clone the repository by running the following in terminal:
+1. Clone the repository by running the following in terminal:
 ``
 git clone https://github.com/AryamanSharma17/ScenRec.git
 ``
 
-Create a Virtual environment using: 
+2. Create a Virtual environment using: 
 
 conda env create -f env.yml
 
@@ -20,7 +20,7 @@ or
 
 conda create -f packagelist.txt
 
-run the notebook *Grounded-SAM-Zoe.ipynb*
+3. Run the notebook *Grounded-SAM-Zoe.ipynb*
 
 The test images are stored [here](https://github.com/AryamanSharma17/ScenRec/tree/master/Resource/Test_images)
 
