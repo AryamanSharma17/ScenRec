@@ -3,29 +3,31 @@
 
 ![Picture1](https://github.com/AryamanSharma17/ScenRec/assets/56839113/e611fdc5-b539-40f9-b73e-09ab3187a51d)
 
-This repository contains "Les Furnitures", 3D Room Representation using a single image, a master project done in "Complex Computer Rendering Methods in Real Time" class in Jean Monnet University. By using GroundingDINO and SegmentAnything we detect the furnitures and by using ZoeDepth we calculate the relative depth. 
-Finally, we introduce a visualization in browser or VR using Three.js.
+This repository contains "Les Furnitures", a 3D Room Representation using a single image: A master project done for the "Complex Computer Rendering Methods in Real Time" course at Jean Monnet University. By using GroundingDINO and SegmentAnything we detect the furniture and by using ZoeDepth we calculate the relative depth. 
+Finally, we introduce a visualization in a browser or VR using Three.js.
 
 ## Usage
-Clone the repository by running:
+Clone the repository by running the following in terminal:
 ``
 git clone https://github.com/AryamanSharma17/ScenRec.git
 ``
 
 run the notebook *Grounded-SAM-Zoe.ipynb*
 
+The test images are stored [here](Resources/Test_images)
+
 ## Resources
 
 Material related to our project is available via the following links:
 
-- Inspiration : https://machinelearning.apple.com/research/roomplan
+- Inspiration: https://machinelearning.apple.com/research/roomplan
 - GroundingDINO Github repo: https://github.com/IDEA-Research/GroundingDINO
 - SAM Github repo: https://github.com/facebookresearch/segment-anything
 - ZoeDepth Github repo: https://github.com/isl-org/ZoeDepth
 
 ## Examples: # DO TO:
 
-we provided some examples you can open in browser.
+we provided some examples you can open in the browser.
 | Path | Description
 | :--- | :----------
 | [StyleGAN](https://drive.google.com/open?id=1uka3a1noXHAydRPRbknqwKVGODvnmUBX) | Main folder.
@@ -35,7 +37,7 @@ we provided some examples you can open in browser.
 | &boxv;&nbsp; &boxvr;&nbsp; [representative-images](https://drive.google.com/open?id=1ToY5P4Vvf5_c3TyUizQ8fckFFoFtBvD8) | High-quality images to be used in articles, blog
 
 ## Future work 
-* Orientation Detection from single image 
+* Orientation Detection from a single image 
 * More furniture categories
 * More complex scenarios 
 * Realistic representation 
@@ -45,23 +47,33 @@ we provided some examples you can open in browser.
 
 ## Acknowledgements
 
-We thank the authors of GroundingDINO, SAM and ZoeDepth, we used their github and hugging face demos and notebooks. 
-We thank our professor Philippe Colantoni for the advices. 
+We thank the authors of GroundingDINO, SAM, and ZoeDepth, we used their GitHub and hugging face demos and notebooks. 
+We thank our professor Philippe Colantoni for the advice. 
 
 ## Additional Notes about the process
 
+#### 08.06.2023
+
+Leres model added
+
+Visualization Possible
+
+Erosion Disregarded
+
+File formatting done
+
 #### 05.06.2023
-`leres`
+`Leres`
 1. For each mask, do separate erosion
-2. Erosion can be: 3,3 kernel on small images based on simple mask
-3. For each eroded mask, do depth center calculation
-4. Move all setup files to the top
-5. Move all test files to the bottom
-6. If possible, move all model etc to another file
+2. Erosion can be: 3,3 kernel on small images based on a simple mask
+3. For each eroded mask, do a depth center calculation
+~~4. Move all setup files to the top~~
+~~5. Move all test files to the bottom~~
+6. If possible, move all models, etc to another file
 
  
 `ZOE`
-1. Do same as leres
+~~1. Do the same as Leres~~
 
 
 `GENERAL`
@@ -69,12 +81,3 @@ We thank our professor Philippe Colantoni for the advices.
 2. Add MiDaS
 3. git= google-research-datasets/Objectron
 
-#### 08.06.2023
-
-Leres model added
-
-Visualization Posisble
-
-Erosion Disregarded
-
-File formatting done
