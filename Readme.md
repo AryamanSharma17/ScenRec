@@ -14,7 +14,7 @@ git clone https://github.com/AryamanSharma17/ScenRec.git
 
 run the notebook *Grounded-SAM-Zoe.ipynb*
 
-The test images are stored [here](https://github.com/AryamanSharma17/ScenRec/Resources/Test_images)
+The test images are stored [here](https://github.com/AryamanSharma17/ScenRec/tree/master/Resource/Test_images)
 
 ## Resources
 
