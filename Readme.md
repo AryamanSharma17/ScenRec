@@ -28,6 +28,14 @@ The test images are stored [here](https://github.com/AryamanSharma17/ScenRec/tre
 To test your own image, add the path to the [notebook](https://github.com/AryamanSharma17/ScenRec/blob/master/Grounded-SAM-Zoe.ipynb) cell 13
 >test_image = dirmain + ...
 
+4. The JSON file path containing the information extracted must be added to the RoomVisualization/index.html at line 116
+>loader1.load('Vr_Zoe.json', function(data) {
+
+as `Vr_Zoe.json` or `Vr_Leres.json`
+(If using Zoedepth Estimation, no changes are required)
+
+5. Run the index.html file to visualize the scene
+
 ## Resources
 
 Material related to our project is available via the following links:
